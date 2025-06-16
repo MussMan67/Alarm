@@ -50,11 +50,11 @@ void setup()
 }
 
 void loop() {
-  // if (isWakeUpTime() || !alarmStopped) { wakeUp(); }
+  if (isWakeUpTime() || !alarmStopped) { wakeUp(); }
   // Serial.println(String((uint32_t) millis()) + "        " + String(wakeUpTime) + "    " + String(volumeValue()));
-  // // handleAlarmAdjustment();
-  // handleSkipCycle();
-  // // handleRumble();
+  handleAlarmAdjustment();
+  handleSkipCycle();
+  handleRumble();
 }
 
 bool isWakeUpTime() {
